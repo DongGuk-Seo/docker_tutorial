@@ -4,11 +4,11 @@ on: push
 
 jobs:
   lint:
-    name: Lint by GitHub Super-linter
+    name: Lint test
     runs-on: ubuntu-latest
 
     env:
-      PYTHON: '3.7'
+      PYTHON: '3.10'
     
     steps:
       - name: Checkout Code
@@ -23,20 +23,20 @@ jobs:
           VALIDATE_PYTHON_FLAKE8: true
 
   test:
-    name: Pytest with Coverage and Publish
+    name: unittest
     runs-on: ubuntu-latest
 
     env:
-      PYTHON: '3.7'
+      PYTHON: '3.10'
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
       
-      - name: Set up Python 3.9
+      - name: Set up Python 3.10
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.10'
           architecture: 'x64'
 
       - name: Install Dependencies
