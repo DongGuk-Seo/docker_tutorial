@@ -15,4 +15,4 @@ if __name__ == "__main__":
 
 
 # docker run -it -p 8000:8000 {IMAGE's: id}
-## -> 8000:8000 -> {myport} : {docker's port}
+# -> 8000:8000 -> {myport} : {docker's port}
