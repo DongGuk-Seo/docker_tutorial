@@ -1,5 +1,3 @@
-from pydoc import cli
-from urllib import response
 from fastapi.testclient import TestClient
 from main import app
 
